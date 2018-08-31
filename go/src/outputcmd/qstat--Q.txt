@@ -1,0 +1,5 @@
+Queue              Max   Tot Ena Str   Que   Run   Hld   Wat   Trn   Ext Type
+---------------- ----- ----- --- --- ----- ----- ----- ----- ----- ----- ----
+workq                0     1 yes yes     1     0     0     0     0     0 Exec
+standard             0     4 yes yes     4     0     0     0     0     0 Exec
+normal               0     0 yes yes     0     0     0     0     0     0 Rout

@@ -1,0 +1,11 @@
+
+pps02:
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+210.pps02       tom      workq    STDIN         --    1   1    --    --  Q   --
+211.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+212.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+213.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+214.pps02       tom      standard termJob       --    1  12    --  01:00 Q   --
+

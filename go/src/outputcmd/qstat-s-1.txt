@@ -1,0 +1,11 @@
+
+pps02:
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+375.pps02       kahmun   workq    VeryLongJo  32608   1   6    2gb 01:00 R 00:03    Job run at Tue Jul 24 at 11:22 on (pps04:ncpus=6:mem=2097152kb)
+376.pps02       kahmun   workq    VeryLongJo   6802   1   6    2gb 01:00 R 00:00    Job run at Tue Jul 24 at 11:25 on (pps03:ncpus=6:mem=2097152kb)
+377.pps02       kahmun   workq    VeryLongJo    --    1   6    2gb 01:00 Q   --     Not Running: Insufficient amount of resource: mem
+378.pps02       kahmun   workq    VeryLongJo    --    1   6    2gb 01:00 Q   --     Not Running: Insufficient amount of resource: mem
+379.pps02       kahmun   workq    VeryLongJo    --    1   6    2gb 01:00 Q   --     Not Running: Insufficient amount of resource: mem
+380.pps02       kahmun   workq    VeryLongJo    --    1   6    2gb 01:00 Q   --     Not Running: Insufficient amount of resource: mem

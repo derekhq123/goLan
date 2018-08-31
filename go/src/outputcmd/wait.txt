@@ -1,0 +1,6 @@
+
+pps02:
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+422.pps02       kahmun   workq    VeryLongJo   9377   1   6    2gb 01:00 R 00:00 pps04/0*6

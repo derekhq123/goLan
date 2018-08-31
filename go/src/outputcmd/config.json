@@ -1,0 +1,108 @@
+{
+   "url":"http://localhost:8080/",
+   
+
+  "qstat-Q":{
+    "format":"table",
+    "head":"queue,max,tot,ena,str,que,run,hld,wat,trn,ext,type",
+    "numOfSkip":2,
+    "command":"qstat",
+    "parameter":"-Q",
+    "lastCol":12
+  },
+  "qstat-B":{
+    "format":"table",
+    "head":"server,max,tot,que,run,hld,wat,trn,ext,status",
+    "numOfSkip":2,
+    "command":"qstat",
+    "parameter":"-B",
+    "lastCol":10
+
+  },
+  "qstat-q":{
+    "format":"table",
+    "head":"queue,memory,cputime,walltime,node,run,que,lm,state",
+    "numOfSkip":5,
+    "command":"qstat",
+    "parameter":"-q",
+    "lastCol":8,
+    "interval":5
+  },
+  "qstat-qf":{
+    "parent":":",
+    "child":" = ",
+    "child-child":{
+      "set":" ",
+      "single":":"
+    },
+   "command":"qstat",
+    "parameter":"-qf"
+  },
+  "qstat-f":{
+    "parent":":",
+    "child":" = ",
+    "child-child":{
+      "set":",",
+      "single":"="
+    },
+    "command":"qstat",
+    "parameter":"-f"
+  },
+  "pbsnodes-a":{
+    "parent":"",
+    "child":" = ",
+    "child-child":{
+      "set":",",
+      "single":"="
+    },
+    "command":"pbsnodes",
+    "parameter":"-a",
+    "set":"",
+    "single":""
+  },
+  "qstat":{
+    "head":"jobID,name,user,timeuse,status,queue",
+    "numOfSkip":2,
+    "interval":5,
+    "command":"qstat",
+    "parameter":"",
+    "lastCol":6
+  },
+  "qstat-a":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime",
+    "numOfSkip":5,
+    "interval":5,
+    "command":"qstat",
+    "parameter":"-a",
+    "lastCol":11
+  },
+  "GetJobInfoWithComment":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime,comment",
+    "numOfSkip":5,
+    "lastCol":11,
+    "command":"qstat",
+    "parameter":"-s -1"
+  },
+  "qstat-iu-":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime",
+    "numOfSkip":5,
+    "command":"qstat",
+    "parameter":"-iu -",
+    "lastCol":11
+  },
+  "qstat-u-":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime",
+    "numOfSkip":5,
+    "command":"qstat",
+    "parameter":"-u -",
+    "lastCol":11,
+    "interval":5
+  },
+  "qstat-n-1-":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime,exec_host",
+    "numOfSkip":5,
+    "command":"qstat",
+    "parameter":"-n -1 ",
+    "lastCol":11
+  }
+}

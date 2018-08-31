@@ -1,0 +1,11 @@
+
+server: pps02
+
+Queue            Memory CPU Time Walltime Node   Run   Que   Lm  State
+---------------- ------ -------- -------- ---- ----- ----- ----  -----
+workq              --      --       --     --      0     1   --   E R
+standard           --      --       --     --      0     4   --   E R
+normal             --      --       --     --      0     0   --   E R
+                                               ----- -----
+                                                   0     5
+

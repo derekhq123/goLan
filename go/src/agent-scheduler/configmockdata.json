@@ -1,0 +1,109 @@
+{
+   "url":"http://localhost:8080/",
+   
+
+  "QueryQueueLimit":{
+    "format":"table",
+    "head":"Queue,Max,Tot,Ena,Str,Que,Run,Hld,Wat,Trn,Ext,Type",
+    "numOfSkip":2,
+    "command":"cat",
+    "parameter":"outputcmd/qstat--Q.txt",
+    "lastCol":12
+  },
+  "ServerSummary":{
+    "format":"table",
+    "head":"Server,Max,Tot,Que,Run,Hld,Wat,Trn,Ext,Status",
+    "numOfSkip":2,
+    "command":"cat",
+    "parameter":"outputcmd/qstat-B.txt",
+    "lastCol":10
+
+  },
+  "qstat-q":{
+    "format":"table",
+    "head":"Queue,Memory,CPU Time,Walltime,Node,Run,Que,Lm,State",
+    "numOfSkip":5,
+    "command":"cat",
+    "parameter":"outputcmd/qstat-q.txt",
+    "lastCol":8,
+    "interval":5
+  },
+  "QueueQueryByQueueId":{
+    "parent":":",
+    "child":" = ",
+    "child-child":{
+      "set":" ",
+      "single":":"
+    },
+   "command":"cat",
+    "parameter":"outputcmd/qstat-qf.txt"
+  },
+  "JobQueryByJobId":{
+    "parent":":",
+    "child":" = ",
+    "child-child":{
+      "set":",",
+      "single":"="
+    },
+    "command":"cat",
+    "parameter":"outputcmd/qstat-f.txt"
+  },
+  "GetQueueNJobInfo":{
+    "head":"JobID,Name,User,Time Use,S,Queue",
+    "numOfSkip":2,
+    "interval":5,
+    "command":"cat",
+    "parameter":"outputcmd/qstat.txt",
+    "lastCol":6
+  },
+  
+  "GetJobInfo":{
+    "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime",
+    "numOfSkip":5,
+    "interval":5,
+    "command":"cat",
+    "parameter":"outputcmd/qstat-a.txt",
+    "lastCol":11
+  },
+  "GetJobInfoWithComment":{
+    "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime,Comment",
+    "numOfSkip":5,
+    "lastCol":11,
+    "command":"cat",
+    "parameter":"outputcmd/qstat-s-1.txt"
+  },
+  "GetQueuedJobInfoByUserId":{
+    "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime",
+    "numOfSkip":5,
+    "command":"cat",
+    "parameter":"outputcmd/qstat-iu-kahmun.txt",
+    "lastCol":11
+  },
+  "GetJobInfoByUserId":{
+    "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime",
+    "numOfSkip":5,
+    "command":"cat",
+    "parameter":"outputcmd/qstat-u-kahmun.txt",
+    "lastCol":11,
+    "interval":5
+  },
+  "GetNodeInfoByJobId":{
+    "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime,Exec_host",
+    "numOfSkip":5,
+    "command":"cat",
+    "parameter":"outputcmd/qstat-n-1-212.txt",
+    "lastCol":11
+  },
+  "GetAllPbsNodesInfo":{
+    "parent":":",
+    "child":" = ",
+    "child-child":{
+      "set":",",
+      "single":"="
+    },
+    "command":"cat",
+    "parameter":"outputcmd/pbsnodes-a.out",
+    "set":"",
+    "single":""
+  }
+}

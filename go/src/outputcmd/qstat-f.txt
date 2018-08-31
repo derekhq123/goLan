@@ -1,0 +1,98 @@
+Job Id: 400.pps02
+    Job_Name = VeryLongJob
+    Job_Owner = kahmun@pps01
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:00
+    resources_used.mem = 3472kb
+    resources_used.ncpus = 6
+    resources_used.vmem = 336420kb
+    resources_used.walltime = 00:00:48
+    job_state = R
+    queue = workq
+    server = pps02
+    Checkpoint = u
+    ctime = Tue Jul 31 11:22:30 2018
+    Error_Path = pps01:/home/kahmun/scratch/testjob.err
+    exec_host = pps03/0*6
+    exec_vnode = (pps03:ncpus=6:mem=2097152kb)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Tue Jul 31 11:22:30 2018
+    Output_Path = pps01:/home/kahmun/scratch/testjob.out
+    Priority = 0
+    qtime = Tue Jul 31 11:22:30 2018
+    Rerunable = True
+    Resource_List.mem = 2gb
+    Resource_List.ncpus = 6
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ncpus=6:mem=2gb
+    Resource_List.walltime = 01:00:00
+    stime = Tue Jul 31 11:22:30 2018
+    session_id = 11257
+    jobdir = /home/kahmun
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/kahmun,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=kahmun,
+	PBS_O_PATH=/home/apps/mpich/bin:/usr/local/bin:/usr/bin:/usr/local/sbi
+	n:/usr/sbin:/opt/pbs/bin:/home/kahmun/.local/bin:/home/kahmun/bin,
+	PBS_O_MAIL=/var/spool/mail/kahmun,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/kahmun/scratch,PBS_O_SYSTEM=Linux,
+	PBS_O_QUEUE=normal,PBS_O_HOST=pps01
+    comment = Job run at Tue Jul 31 at 11:22 on (pps03:ncpus=6:mem=2097152kb)
+    etime = Tue Jul 31 11:22:30 2018
+    run_count = 1
+    Submit_arguments = verylong.pbs
+    project = _pbs_project_default
+
+Job Id: 401.pps02
+    Job_Name = VeryLongJob
+    Job_Owner = kahmun@pps01
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:00
+    resources_used.mem = 3468kb
+    resources_used.ncpus = 6
+    resources_used.vmem = 336420kb
+    resources_used.walltime = 00:00:27
+    job_state = R
+    queue = workq
+    server = pps02
+    Checkpoint = u
+    ctime = Tue Jul 31 11:22:31 2018
+    Error_Path = pps01:/home/kahmun/scratch/testjob.err
+    exec_host = pps04/0*6
+    exec_vnode = (pps04:ncpus=6:mem=2097152kb)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Tue Jul 31 11:22:31 2018
+    Output_Path = pps01:/home/kahmun/scratch/testjob.out
+    Priority = 0
+    qtime = Tue Jul 31 11:22:31 2018
+    Rerunable = True
+    Resource_List.mem = 2gb
+    Resource_List.ncpus = 6
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ncpus=6:mem=2gb
+    Resource_List.walltime = 01:00:00
+    stime = Tue Jul 31 11:22:31 2018
+    session_id = 5562
+    jobdir = /home/kahmun
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/kahmun,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=kahmun,
+	PBS_O_PATH=/home/apps/mpich/bin:/usr/local/bin:/usr/bin:/usr/local/sbi
+	n:/usr/sbin:/opt/pbs/bin:/home/kahmun/.local/bin:/home/kahmun/bin,
+	PBS_O_MAIL=/var/spool/mail/kahmun,PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/home/kahmun/scratch,PBS_O_SYSTEM=Linux,
+	PBS_O_QUEUE=normal,PBS_O_HOST=pps01
+    comment = Job run at Tue Jul 31 at 11:22 on (pps04:ncpus=6:mem=2097152kb)
+    etime = Tue Jul 31 11:22:31 2018
+    run_count = 1
+    Submit_arguments = verylong.pbs
+    project = _pbs_project_default
+

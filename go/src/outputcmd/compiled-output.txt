@@ -1,0 +1,98 @@
+[qstat]
+Job id            Name             User              Time Use S Queue
+----------------  ---------------- ----------------  -------- - -----
+210.pps02         STDIN            tom                      0 Q workq
+211.pps02         VeryLongJob      kahmun                   0 Q standard
+212.pps02         VeryLongJob      kahmun                   0 Q standard
+213.pps02         VeryLongJob      kahmun                   0 Q standard
+214.pps02         termJob          tom                      0 Q standard
+
+
+
+[qstat -s]
+
+pps02:
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+374.pps02       kahmun   workq    VeryLongJo   6722   1   6    2gb 01:00 R 00:02
+   Job run at Tue Jul 24 at 11:20 on (pps03:ncpus=6:mem=2097152kb)
+375.pps02       kahmun   workq    VeryLongJo  32608   1   6    2gb 01:00 R 00:00
+   Job run at Tue Jul 24 at 11:22 on (pps04:ncpus=6:mem=2097152kb)
+376.pps02       kahmun   workq    VeryLongJo    --    1   6    2gb 01:00 Q   --
+   Not Running: Insufficient amount of resource: mem
+
+   
+[qstat -a]
+
+pps02:
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+210.pps02       tom      workq    STDIN         --    1   1    --    --  Q   --
+211.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+212.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+213.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+214.pps02       tom      standard termJob       --    1  12    --  01:00 Q   --
+
+
+[qstat -q]
+
+server: pps02
+
+Queue            Memory CPU Time Walltime Node   Run   Que   Lm  State
+---------------- ------ -------- -------- ---- ----- ----- ----  -----
+workq              --      --       --     --      2     1   --   E R
+standard           --      --       --     --      0     0   --   E R
+normal             --      --       --     --      0     0   --   E R
+                                               ----- -----
+                                                   2     1
+
+										
+[qstat -Q]
+Queue              Max   Tot Ena Str   Que   Run   Hld   Wat   Trn   Ext Type
+---------------- ----- ----- --- --- ----- ----- ----- ----- ----- ----- ----
+workq                0     1 yes yes     1     0     0     0     0     0 Exec
+standard             0     4 yes yes     4     0     0     0     0     0 Exec
+normal               0     0 yes yes     0     0     0     0     0     0 Rout
+
+
+[qstat -B]
+Server             Max   Tot   Que   Run   Hld   Wat   Trn   Ext Status
+---------------- ----- ----- ----- ----- ----- ----- ----- ----- -----------
+pps02                0    16     5     0     0     0     0     0 Active
+
+
+
+[qstat -iu kahmun]
+
+pps02:
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+211.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+212.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+213.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+
+
+
+[qstat -u kahmun]
+
+pps02:
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+211.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+212.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+213.pps02       kahmun   standard VeryLongJo    --    1   6    --  01:00 Q   --
+
+
+
+[qstat -n -1 212]
+
+
+pps02:
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+375.pps02       kahmun   workq    VeryLongJo  32608   1   6    2gb 01:00 R 00:00 pps04/0*6

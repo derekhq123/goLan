@@ -1,0 +1,96 @@
+{
+  "url":"http://localhost:8080/",
+  "GetQueueNJobInfo":{
+    "head":"jobID,name,user,timeuse,status,queue",
+    "numOfSkip":2,
+    "interval":5,
+    "command":"qstat",
+    "parameter":"",
+    "lastCol":6
+  },
+  "QueryQueueLimit":{
+    "format":"table",
+    "head":"queue,max,tot,ena,str,que,run,hld,wat,trn,ext,type",
+    "numOfSkip":2,
+    "command":"qstat",
+    "parameter":"-Q",
+    "lastCol":12
+  },
+  "ServerSummary":{
+    "format":"table",
+    "head":"server,max,tot,que,run,hld,wat,trn,ext,status",
+    "numOfSkip":2,
+    "command":"qstat",
+    "parameter":"-B",
+    "lastCol":10
+  },
+  "QueueQueryByQueueId":{
+    "parent":":",
+    "child":" = ",
+    "child-child":{
+      "set":" ",
+      "single":":"
+    },
+    "command":"qstat",
+    "parameter":"-Qf"
+  },
+  "JobQueryByJobId":{
+    "parent":":",
+    "child":" = ",
+    "child-child":{
+      "set":",",
+      "single":"="
+    },
+    "command":"qstat",
+    "parameter":"-f"
+  },
+  "GetJobInfo":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime",
+    "numOfSkip":5,
+    "interval":5,
+    "command":"qstat",
+    "parameter":"-a",
+    "lastCol":11
+  },
+  "GetQueuedJobInfoByUserId":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime",
+    "numOfSkip":5,
+    "command":"qstat",
+    "parameter":"-iu",
+    "lastCol":11
+  },
+  "GetJobInfoByUserId":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime",
+    "numOfSkip":5,
+    "command":"qstat",
+    "parameter":"-u",
+    "lastCol":11,
+    "interval":5
+  },
+  "GetJobInfoWithComment":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime,comment",
+    "numOfSkip":5,
+    "lastCol":11,
+    "command":"qstat",
+    "parameter":"-s -1"
+  },
+  "GetNodeInfoByJobId":{
+    "head":"jobid,username,queue,jobname,sessid,nds,tsk,reqdmemory,reqdtime,status,elaptime,exec_host",
+    "numOfSkip":5,
+    "command":"qstat",
+    "parameter":"-n -1",
+    "lastCol":11
+  },
+  "GetAllPbsNodesInfo":{
+    "parent":"",
+    "child":" = ",
+    "child-child":{
+      "set":",",
+      "single":"="
+    },
+    "command":"pbsnodes",
+    "parameter":"-a",
+    "set":"",
+    "single":""
+  }
+}

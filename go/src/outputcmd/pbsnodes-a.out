@@ -1,0 +1,97 @@
+Cluster: ACRC
+     Mom = pps01
+     ntype = PBS
+     state = free
+     pcpus = 2
+     jobs = 381.pps02/0, 381.pps02/1, 381.pps02/2, 381.pps02/3, 381.pps02/4, 381.pps02/5
+     resources_available.arch = linux
+     resources_available.host = pps03
+     resources_available.mem = 3882068kb
+     resources_available.ncpus = 11
+     resources_available.vnode = pps03
+     resources_assigned.accelerator_memory = 0kb
+     resources_assigned.mem = 2097152kb
+     resources_assigned.naccelerators = 0
+     resources_assigned.ncpus = 6
+     resources_assigned.ngpus = 0
+     resources_assigned.vmem = 0kb
+     resv_enable = True
+     sharing = default_shared
+	 
+Cluster: ACRC
+     Mom = pps02
+     ntype = PBS
+     state = free
+     pcpus = 2
+     resources_available.arch = linux
+     resources_available.host = pps04
+     resources_available.mem = 3882068kb
+     resources_available.ncpus = 12
+     resources_available.vnode = pps04
+     resources_assigned.accelerator_memory = 0kb
+     resources_assigned.mem = 0kb
+     resources_assigned.naccelerators = 0
+     resources_assigned.ncpus = 0
+     resources_assigned.ngpus = 0
+     resources_assigned.vmem = 0kb
+     resv_enable = True
+     sharing = default_shared
+	 
+Cluster: NSCC
+     Mom = pps03
+     ntype = PBS
+     state = free
+     pcpus = 2
+     jobs = 382.pps02/0, 382.pps02/1, 382.pps02/2, 382.pps02/3, 382.pps02/4, 382.pps02/5
+     resources_available.arch = linux
+     resources_available.host = pps03
+     resources_available.mem = 3882068kb
+     resources_available.ncpus = 11
+     resources_available.vnode = pps03
+     resources_assigned.accelerator_memory = 0kb
+     resources_assigned.mem = 2097152kb
+     resources_assigned.naccelerators = 0
+     resources_assigned.ncpus = 6
+     resources_assigned.ngpus = 0
+     resources_assigned.vmem = 0kb
+     resv_enable = True
+     sharing = default_shared
+
+Cluster: NSCC
+     Mom = pps04
+     ntype = PBS
+     state = free
+     pcpus = 2
+     resources_available.arch = linux
+     resources_available.host = pps04
+     resources_available.mem = 3882068kb
+     resources_available.ncpus = 12
+     resources_available.vnode = pps04
+     resources_assigned.accelerator_memory = 0kb
+     resources_assigned.mem = 0kb
+     resources_assigned.naccelerators = 0
+     resources_assigned.ncpus = 0
+     resources_assigned.ngpus = 0
+     resources_assigned.vmem = 0kb
+     resv_enable = True
+     sharing = default_shared
+
+Cluster: NSCC
+     Mom = pps05
+     ntype = PBS
+     state = free
+     pcpus = 2
+     resources_available.arch = linux
+     resources_available.host = pps04
+     resources_available.mem = 3882068kb
+     resources_available.ncpus = 12
+     resources_available.vnode = pps04
+     resources_assigned.accelerator_memory = 0kb
+     resources_assigned.mem = 0kb
+     resources_assigned.naccelerators = 0
+     resources_assigned.ncpus = 0
+     resources_assigned.ngpus = 0
+     resources_assigned.vmem = 0kb
+     resv_enable = True
+     sharing = default_shared
+
