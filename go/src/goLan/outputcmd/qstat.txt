@@ -1,0 +1,8 @@
+Job id            Name             User              Time Use S Queue
+----------------  ---------------- ----------------  -------- - -----
+210.pps02         STDIN            tom                      0 Q workq
+211.pps02         VeryLongJob      kahmun                   0 Q standard
+212.pps02         VeryLongJob      kahmun                   0 Q standard
+213.pps02         VeryLongJob      kahmun                   0 Q standard
+214.pps02         termJob          tom                      0 Q standard
+

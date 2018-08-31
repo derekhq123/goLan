@@ -1,0 +1,50 @@
+{
+	"qstat-Q":{
+		"format":"table",
+		"head":"Queue,Max,Tot,Ena,Str,Que,Run,Hld,Wat,Trn,Ext,Type",
+		"numOfSkip":2
+	},
+	"qstat-B":{
+		"format":"table",
+		"head":"Server,Max,Tot,Que,Run,Hld,Wat,Trn,Ext,Status",
+		"numOfSkip":2
+	},
+	"qstat-q":{
+		"format":"table",
+		"head":"Queue,Memory,CPU Time,Walltime,Node,RUn,Que,Lm,State",
+		"numOfSkip":5
+	},
+	"QueueQueryByQueueId":{  
+	  "parent":":",
+	  "child":" = ",
+	  "child-child":{  
+	     "set":" ",
+	     "single":":"
+	  }
+	},
+	"JobQueryByJobId":{  
+	  "parent":":",
+	  "child":" = ",
+	  "child-child":{  
+	     "set":",",
+	     "single":"="
+	  }
+	},
+	"GetQueueNJobInfo":{  
+	  "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime",
+	  "numOfSkip":5
+	},
+	"GetQueuedJobInfoByUserId":{  
+	  "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime",
+	  "numOfSkip":5
+	},
+	"GetJobInfoByUserId":{  
+	  "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime",
+	  "numOfSkip":5
+	}
+	,
+	"GetNodeInfoByJobId":{  
+	  "head":"JobID,Username,Queue,Jobname,SessID,NDS,TSK,ReqdMemory,ReqdTime,S,ElapTime",
+	  "numOfSkip":5
+	}
+}

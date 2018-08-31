@@ -1,0 +1,48 @@
+Job Id: 58.pps02
+    Job_Name = MyTestJob
+    Job_Owner = kahmun@pps01
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:00
+    resources_used.mem = 0kb
+    resources_used.ncpus = 8
+    resources_used.vmem = 0kb
+    resources_used.walltime = 00:00:00
+    job_state = R
+    queue = standard
+    server = pps02
+    Checkpoint = u
+    ctime = Thu Jun 28 11:31:41 2018
+    Error_Path = pps01:/home/kahmun/scratch/testjob.err
+    exec_host = pps03/0*8
+    exec_vnode = (pps03:ncpus=8)
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Thu Jun 28 11:31:41 2018
+    Output_Path = pps01:/home/kahmun/scratch/testjob.out
+    Priority = 0
+    qtime = Thu Jun 28 11:31:41 2018
+    Rerunable = True
+    Resource_List.mpiprocs = 12
+    Resource_List.ncpus = 8
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.select = 1:ncpus=8:mpiprocs=12:ompthreads=1
+    Resource_List.walltime = 01:00:00
+    stime = Thu Jun 28 11:31:41 2018
+    session_id = 13883
+    jobdir = /home/kahmun
+    substate = 42
+    Variable_List = PBS_O_HOME=/home/kahmun,PBS_O_LANG=en_US.UTF-8,
+        PBS_O_LOGNAME=kahmun,
+        PBS_O_PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/
+        bin:/home/kahmun/.local/bin:/home/kahmun/bin,
+        PBS_O_MAIL=/var/spool/mail/kahmun,PBS_O_SHELL=/bin/bash,
+        PBS_O_WORKDIR=/home/kahmun/scratch,PBS_O_SYSTEM=Linux,
+        PBS_O_QUEUE=normal,PBS_O_HOST=pps01
+    comment = Job run at Thu Jun 28 at 11:31 on (pps03:ncpus=8)
+    etime = Thu Jun 28 11:31:41 2018
+    run_count = 1
+    Submit_arguments = km.pbs
+    project = _pbs_project_default
